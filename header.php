@@ -22,3 +22,18 @@
         <?php wp_head();?>
     </head>
     <body <?php body_class()?> >
+    <header>
+        <div class="container">
+            <div class="logo">
+               <a href=""><img src="" alt=""></a>
+            </div>
+            <nav>
+                <ul class="list-unstyled">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Games</a></li>
+                    <li><a href="">Benefícios</a></li>
+                    <li><a href="">Quero ser afiliado</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
