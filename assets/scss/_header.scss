@@ -1,0 +1,42 @@
+header {
+  .content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 15px 8px 15px;
+  }
+  .logo {
+    width: 20%;
+    img {
+      width: 170px;
+    }
+  }
+  nav {
+    width: 75%;
+    ul {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      li {
+        margin: 0 44px;
+        text-align: center;
+        a {
+          text-decoration: none !important;
+          color: #fff;
+          font-weight: 600;
+          font-size: 1.55rem;
+          transition: all ease-in-out 0.5s;
+          &:hover {
+            color: #fb273b;
+            text-align: none;
+          }
+        }
+      }
+    }
+  }
+  .divider {
+    img {
+      width: 100%;
+    }
+  }
+}
