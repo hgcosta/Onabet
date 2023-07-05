@@ -43,6 +43,43 @@
                 <div class="item">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/game-01.png" alt="Game">
                 </div>
+                <div class="item">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/game-06.png" alt="Game">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2>Bene<strong>fits</strong></h2>
+            <ul class="list-unstyled lista-content">
+                <li>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/cpa-icon.svg" alt="Cpa + %RevShare">
+                    <h4>Cpa + %RevShare</h4>
+                </li>
+                <li>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/mkt-icon.svg" alt="Melhor media kit da indústria brasileira">
+                    <h4>Melhor media kit da indústria brasileira</h4>
+                </li>
+                <li>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/conta-icon.svg" alt="Gerente de Contas">
+                    <h4>Gerente de Contas</h4>
+                </li>
+                <li>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/exclusive-icon.svg" alt="Códigos promocionais exclusivos">
+                    <h4>Códigos promocionais exclusivos</h4>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="afliiados" id="afiliados">
+        <div class="content-afiliados">
+            <div class="col-img">
+                <img src="" alt="">
+            </div>
+            <div class="col-info">
+                <h3>Venha fazer parte do time que mais cresce no Brasil</h3>
+                <a href="">Quero ser afiliado!</a>
             </div>
         </div>
     </section>
