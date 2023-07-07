@@ -1,0 +1,169 @@
+h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-align: center;
+  max-width: 580px;
+  margin: 2rem auto;
+  strong {
+    color: #ff283c;
+  }
+}
+
+.content-form {
+  padding: 2rem;
+  //   background-color: #1f1f1f;
+  margin: 2rem 0;
+  border-radius: 7px;
+  max-width: 700px;
+  margin: 2rem auto;
+  @include tablet {
+    padding: 0;
+  }
+  iframe {
+    @include tablet {
+      width: 100%;
+      height: 3830px;
+    }
+  }
+  label {
+    color: #fff;
+    font-weight: bold;
+    span {
+      color: #ff283c;
+    }
+  }
+  .duo-imput {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+      flex-direction: column;
+    }
+    input {
+      width: 280px;
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 4px;
+      @include tablet {
+        width: 100%;
+      }
+    }
+  }
+  .solo-imput {
+    width: 100%;
+    label {
+      width: 100%;
+    }
+    textarea {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 4px;
+      height: 83px;
+    }
+    input {
+      width: 100%;
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 4px;
+    }
+    select {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  .wpcf7-list-item-label {
+    color: #fff;
+  }
+  .box-duo {
+    p {
+      display: flex;
+      justify-content: space-between;
+      @include tablet {
+        flex-direction: column;
+      }
+    }
+    span {
+      margin-left: 0;
+    }
+    label {
+      width: 300px;
+      @include tablet {
+        width: 100%;
+      }
+    }
+    .wpcf7-form-control-wrap {
+      display: block;
+      margin-top: 1rem;
+    }
+  }
+}
+
+[data-name="tempo-mercado"] {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  span {
+    margin-left: 0;
+  }
+}
+.wpcf7-form-control .wpcf7-radio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.wpcf7-form-control.wpcf7-radio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  span {
+    margin-left: 0;
+  }
+}
+.wpcf7-form-control.wpcf7-checkbox {
+  display: flex;
+  flex-direction: column;
+  span {
+    margin-left: 0;
+  }
+  .first {
+    margin-top: 1rem;
+  }
+}
+input[type="submit"] {
+  margin: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 12px;
+  position: relative;
+  text-align: center;
+  transition: all 0.15s linear;
+  background-color: #ff283c;
+  border-color: #ff283c;
+  color: #fff;
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  padding: 12px 35px;
+  &:hover {
+    color: #ff283c;
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 3px;
+  }
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+  color: #fff;
+}

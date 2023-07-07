@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable=no>
         <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/fav.png">
         <meta name="keywords" content="">
         <meta name="description" content="">
@@ -25,23 +25,4 @@
         <?php wp_head();?>
     </head>
     <body <?php body_class()?> >
-    <header>
-        <div class="container content-header">
-            <div class="logo">
-               <a href="" title="Onabet"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/logo-onabet.svg" alt="Logo Onabet"></a>
-            </div>
-            <nav>
-                <ul class="list-unstyled">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Games</a></li>
-                    <li><a href="">Benefícios</a></li>
-                    <li><a href="">Quero ser afiliado</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="container">
-            <div class="divider">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/divider.png" alt="Divider">
-            </div>
-        </div>
-    </header>
+ 
