@@ -1,14 +1,19 @@
 body {
   background-image: url("../img/BG.svg");
+  background-color: #2d2d2d;
   width: 100%;
   font-family: "Poppins", sans-serif;
   @include tablet {
     overflow-x: hidden !important;
   }
 }
+body,
 html {
-  background-image: url("../img/BG.svg");
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #2d2d2d;
 }
+
 .hero {
   // background-image: url("../img/bg-vermelho-01.svg");
   // background-position-x: right;
@@ -45,8 +50,8 @@ html {
   @include tablet {
     background-image: url(../img/bg-vermelho-mobile.png);
     overflow-x: hidden;
-    background-size: 100%;
-    background-position-y: 35%;
+    background-size: 130%;
+    background-position-y: 56%;
   }
   .content-hero {
     display: flex;
@@ -70,7 +75,7 @@ html {
         margin-bottom: 2rem;
         text-align: left;
         @include tablet {
-          font-size: 2.1rem;
+          font-size: 2.5rem;
           margin-bottom: 1rem;
           margin-top: 0;
           text-align: center;
@@ -81,12 +86,24 @@ html {
       }
       .chamada {
         color: #fff;
-        font-size: 1.45rem;
+        font-size: 1.3rem;
         max-width: 370px;
         @include tablet {
-          font-size: 0.9rem;
+          font-size: 1.1rem;
           text-align: center;
-          margin-bottom: 0.5rem;
+          max-width: 290px;
+          margin: 0.5rem auto;
+        }
+      }
+      .chamada-2 {
+        color: #fff;
+        font-size: 1.3rem;
+        max-width: 370px;
+        @include tablet {
+          font-size: 1.1rem;
+          text-align: center;
+          max-width: 250px;
+          margin: 0.5rem auto;
         }
       }
       .info-afilidao {
@@ -110,6 +127,7 @@ html {
             font-size: 0.95rem;
             margin-right: 0;
             text-align: center;
+            max-width: 260px;
           }
         }
         a {
@@ -135,22 +153,22 @@ html {
       @include tablet {
         width: 100%;
       }
-      picture {
-        @include tablet {
-          width: 100%;
-          display: block;
-        }
-      }
+      // picture {
+      //   @include tablet {
+      //     width: 100%;
+      //     display: block;
+      //   }
+      // }
       img {
         width: 120%;
         position: absolute;
         top: -650px;
         right: -70px;
         @include tablet {
-          width: 125%;
+          width: 130%;
           position: relative;
-          top: 0;
-          right: 6px;
+          top: 30px;
+          right: 19px;
         }
       }
     }
@@ -171,8 +189,7 @@ html {
       flex-direction: column;
       text-align: center;
       width: 100%;
-      padding: 1rem 15px;
-      margin-top: 2.5rem;
+      padding: 0 15px 1rem 15px;
     }
 
     h2 {
@@ -198,8 +215,9 @@ html {
         margin-top: 1.3rem;
       }
       @include sm-mobile {
-        font-size: 1rem;
-        margin-top: 0.5rem;
+        font-size: 0.85rem;
+        margin-top: 0;
+        padding: 0.2rem 0.6rem;
       }
       &:hover {
         background-color: #ff283c;
@@ -260,6 +278,9 @@ html {
     //     height: 315px !important;
     //   }
     // }
+    @include tablet {
+      margin-bottom: 0.5rem;
+    }
     .item {
       height: 350px;
       display: flex;
@@ -354,6 +375,7 @@ html {
         width: 48%;
         border-radius: 25px;
         height: 145px;
+        margin-bottom: 1rem;
       }
       @include sm-mobile {
         width: 48%;
@@ -361,6 +383,7 @@ html {
         height: 105px;
         justify-content: flex-start;
         padding: 1rem;
+        margin-bottom: 1rem;
       }
       img {
         width: 90px;
@@ -460,9 +483,10 @@ html {
         left: 490px;
         width: 55px;
         @include sm-mobile {
-          top: 95px;
-          right: 0;
-          left: inherit;
+          // top: 95px;
+          // right: 0;
+          // left: inherit;
+          display: none;
         }
       }
     }
@@ -539,12 +563,15 @@ html {
       width: 55%;
       @include tablet {
         width: 100%;
+        position: relative;
       }
 
       img {
         width: 100%;
         @include sm-mobile {
-          width: 100%;
+          width: 120%;
+          position: absolute;
+          top: -190px;
         }
       }
     }

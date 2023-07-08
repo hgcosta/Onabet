@@ -42,7 +42,7 @@
         <div class="col-info">
             <h1>Explore um mercado <strong>gigante</strong></h1>
             <p class="chamada">Faça parte do programa de afiliados na OnaBet.</p>
-            <p class="chamada">Uma oportunidade de ouro para conquistar seu lugar no topo com a melhor experiência em jogos e apostas do país.</p>
+            <p class="chamada-2">Uma oportunidade de ouro para conquistar seu lugar no topo com a melhor experiência em jogos e apostas do país.</p>
             <div class="info-afilidao">
                 <p>Seja um dos primeiros a explorar um mercado de 90 milhões de clientes sedentos por emoção e entretenimento.</p>
                 <a href="<?php bloginfo('url') ?>/seja-um-afiliado/">Quero ser afiliado</a>
@@ -50,7 +50,7 @@
         </div>
         <div class="col-img">
             <picture>
-                <!-- <source media="(max-width: 600px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/banner-hero-mobile.png"> -->
+                <source media="(max-width: 600px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/banner-hero-mobile.png">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/banner-hero-dskt-clean.png" alt="Carlinhos Maia">
             </picture>  
             

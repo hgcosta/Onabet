@@ -4,9 +4,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 32px 15px 8px 15px;
-    @include tablet {
-      margin-bottom: 2.5rem;
-    }
   }
   .nada {
     display: none;
@@ -19,7 +16,7 @@
   .logo {
     width: 20%;
     @include tablet {
-      width: 33%;
+      width: 43%;
     }
     img {
       width: 140px;
