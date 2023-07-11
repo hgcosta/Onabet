@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="logo">
-            <a href="" title="Onabet"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/logo-onabet.svg" alt="Logo Onabet"></a>
+            <a href="" title="Onabet"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/logo-onabet.png" alt="Logo Onabet"></a>
         </div>
         <div class="nada"></div>
         <nav>
@@ -65,29 +65,47 @@
         </div>
         <div class="carousel-content">
             <div class="owl-carousel owl-theme desktop">
-                <div class="item">
+            <div class="item">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/game-02.png" alt="Game">
+                    <div class="legenda">
+                        <h3>Fortune Mouse</h3>
+                    </div>
                 </div>
                 <div class="item">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/game-03.png" alt="Game">
+                    <div class="legenda">
+                        <h3>Mines</h3>
+                    </div>
                 </div>
                 <div class="item">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/game-04.png" alt="Game">
+                    <div class="legenda">
+                        <h3>Sweet Bonanza</h3>
+                    </div>
                 </div>
                 <div class="item">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/game-05.png" alt="Game">
+                    <div class="legenda">
+                        <h3>Spaceman</h3>
+                    </div>
                 </div>
                 <div class="item">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/game-06.png" alt="Game">
+                    <div class="legenda">
+                        <h3>Fortune Tiger</h3>
+                    </div>
                 </div>
                 <div class="item">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/game-07.png" alt="Game">
+                    <div class="legenda">
+                        <h3>Fortune Rabbit</h3>
+                    </div>
                 </div>
                 <div class="item">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/game-01.png" alt="Game">
-                </div>
-                <div class="item">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/game-06.png" alt="Game">
+                    <div class="legenda">
+                        <h3>Aviator</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,6 +113,9 @@
             <div class="owl-carousel owl-theme mobile">
                 <div class="item">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/game-02.png" alt="Game">
+                    <div class="legenda">
+                        <h3>Fortune Mouse</h3>
+                    </div>
                 </div>
                 <div class="item">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/game-03.png" alt="Game">
@@ -114,9 +135,7 @@
                 <div class="item">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/game-01.png" alt="Game">
                 </div>
-                <div class="item">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/game-06.png" alt="Game">
-                </div>
+               
             </div>
         </div>
     </section>
@@ -181,8 +200,8 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <picture>
-                    <source media="(max-width: 600px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/plano-carreira-mobile.jpg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/plano-carreira.jpg" alt="Plano de Carreira">
+                    <source media="(max-width: 600px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/plano-carreira-mobile.png">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/plano-carreira.png" alt="Plano de Carreira">
                 </picture>  
                 
             </div>
@@ -200,6 +219,49 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+
+
+  	
+
+// A $( document ).ready() block.
+$( document ).ready(function() {
+    var carrosel = document.querySelectorAll('div.owl-item');
+    
+    var numberInicial = 7;
+    var elementoActiveInicial = carrosel[numberInicial]
+    elementoActiveInicial.classList.add('principal')
+    var next = document.querySelector('.owl-next')
+    var prev = document.querySelector('.owl-prev');
+
+    // el  = Array.from(carrosel);
+
+    // el.forEach(function(element) {
+    //     element.classList.remove('cloned')
+    //     element.classList.add('active')
+    //     element.classList.add('principal')
+
+    //     console.log(element);
+    // });
+    next.addEventListener('click', ()=>{
+        numberInicial++;
+        elementoActiveInicial.classList.remove('principal')
+        elementoActiveInicial = carrosel[numberInicial]
+        console.log(elementoActiveInicial)
+        elementoActiveInicial.classList.add('principal')
+        console.log(numberInicial)
+
+    });
+
+    prev.addEventListener('click', ()=>{
+        elementoActiveInicial.classList.remove('principal')
+        numberInicial --;
+        elementoActiveInicial = carrosel[numberInicial]
+        console.log(elementoActiveInicial)
+        elementoActiveInicial.classList.add('principal')
+    })
+
+});
+
    $('.desktop').owlCarousel({
     stagePadding: 120,
     loop:true,
