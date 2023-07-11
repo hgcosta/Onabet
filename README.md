@@ -25,7 +25,7 @@
 ###
 
 <div align="center">
-  <img height="200" src="http://hugodev.com.br/portfolios/Onabet-Mobile.png"  />
+  <img height="1200" src="http://hugodev.com.br/portfolios/Onabet-Mobile.png"  />
 </div>
 
 ###
