@@ -1,1 +1,1 @@
-## Tema criado para a lading page Onabet
+Tema criado para a lading page Onabet
