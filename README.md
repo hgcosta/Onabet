@@ -10,20 +10,6 @@
 
 ###
 
-<p align="left"></p>
-
-###
-
-<div align="center">
-  <img height="1200" src="http://hugodev.com.br/portfolios/Onabet-Desktop.png"  /> 
-</div>
-
-###
-
-<h2 align="left"></h2>
-
-###
-
 <div align="center">
   <img height="1200" src="http://hugodev.com.br/portfolios/Onabet-Mobile.png"  />
 </div>
