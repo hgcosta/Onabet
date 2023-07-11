@@ -1,8 +1,8 @@
-<h1 align="left">Lading page Onabet Afiliados</h1>
+<h1 align="center">Lading page Onabet Afiliados</h1>
 
 ###
 
-<p align="left">Tema criado para o cadastro de interessados para se afiliar a Onabet</p>
+<p align="center">Tema criado para o cadastro de interessados para se afiliar a Onabet</p>
 
 ###
 
